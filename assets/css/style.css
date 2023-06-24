@@ -1,0 +1,31 @@
+body{
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.42857;
+}
+
+
+
+
+/* index.html */
+#loginForm{
+    position: fixed;
+    top: calc(50% - 15em);
+    left: calc(50% - 15em);
+    width: 29em;
+    min-height: 14em;
+    background: var(--sakai-background-color-1);
+    box-shadow: var(--elevation-4dp);
+        display: block;
+    margin-top: 0em;
+}
+/* index.html */
+
+
+
+
+
+
+
+
