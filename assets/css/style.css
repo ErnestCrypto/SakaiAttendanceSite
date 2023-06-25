@@ -12,6 +12,20 @@ h1{
     margin: 0.75em 0 0.5em 0;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+     text-decoration: none;
+}
+
 
 /* index.html */
 #loginForm{
@@ -557,10 +571,15 @@ text-transform: capitalize;
 
 .includeTabs{
     background: #00357a;
+    
+    
 }
 
 .includeTabs nav{
     display: block;
+    
+   height: inherit;
+
 }
 
 .skip{
@@ -576,23 +595,28 @@ text-transform: capitalize;
 
 #showallsites{
     display: none;
+
 }
 
 .topcontainers{
     display: flex;
     align-items: center;
-    background-color: #00357a;;
     min-height: 52px;
     padding: 0 16px;
+   
+
+
 }
 
 .topcontainers ul{
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     font-family: "Open Sans",sans-serif;
     margin: 16px 0 0 0;
     padding: 0;
     display: flex;
     list-style: none;
+  
+    
 }
 
 .workspace{
@@ -606,7 +630,7 @@ text-transform: capitalize;
     list-style: none;
 }
 
-.workspace:hover{
+.workspace:hover,.menuitem:hover{
     box-shadow: 0 3px 3px -2px rgba(182, 138, 93, 0.623), 0 4px 4px 0 rgba(182,138,93,.12), 0 1px 5px 0 rgba(182,138,93.12);
     transition: 100ms ease-out;
     background: #b6975d;
@@ -619,12 +643,11 @@ text-transform: capitalize;
     display: flex !important;
     align-items: center;
     justify-content: center !important;
-    padding: 8px;
+    padding: 6px 8px;
     text-align: center;
     text-decoration: none;
     color: #00357a;
     border-radius: 25px;
-   
      padding-right: 0px;
 
 }
@@ -648,7 +671,7 @@ text-transform: capitalize;
 
 .link-container-dropdown{
     margin-left: -1px;
-    padding: 8px;
+    padding: 6px 8px;
     text-align: center;
     text-decoration: none;
     color: #00357a;
@@ -676,13 +699,32 @@ text-transform: capitalize;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 0 16px 16px 0;
-    padding: 0;
+    margin: 0px 16px 16px 0px;
+    padding: 0px;
     border-radius: 25px;
-
     list-style: none;
     background: white;
 }
+
+.menuitem-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0px 16px 16px 0px;
+    padding: 0px;
+    border-radius: 25px;
+    list-style: none;
+    background: #ffbf0f;
+}
+
+.menuitem-2:hover{
+    background:#b6975d;
+    box-shadow: 0 3px 3px -2px rgba(182, 138, 93, 0.623), 0 4px 4px 0 rgba(182,138,93,.12), 0 1px 5px 0 rgba(182,138,93.12);
+    transition:  ease-out;
+   
+}
+
 .menuitem-icon::before{
      font-family: 'Font Awesome\ 5 Free';
      content: "\f005";
@@ -694,7 +736,10 @@ text-transform: capitalize;
     font-weight: 600;
 }
 
-
+.menuitem-icon:hover,.menuitem-icon-2:hover{
+    color: #fff;
+    text-decoration: none;
+}
 
 .menuitem-icon,.menuitem-icon-2{
     margin-right: -1px;
@@ -711,9 +756,210 @@ text-transform: capitalize;
     justify-content: center;
 }
 
+.pagebody{
+    display: flex;
+    align-items: stretch;
+ 
+    flex-direction: row;
+}
+
+.toolMenu{
+    display: block;
+    min-width: 216px;
+    width: 216px;
+    min-height: calc(100vh - (52px * 2));
+    flex-basis: 216px;
+    padding: calc(16px / 2) 0 0 0;
+    text-align: center;
+    border-right: 1px solid #e3e4e5;
+
+
+}
+
+.toolMenuitemsContainer{
+    color: #333435;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+
+
+}
+
+.toolMenuitemsContainer nav{
+position: relative;
+display: block;
+justify-content: flex-start;
+align-items:center;
+
+height: inherit;
+
+
+}
 
 
 
+
+.toolMenuitemsContainer nav li{
+border-bottom: 1px solid white;
+
+}
+
+
+
+
+.toolMenuitemsContainer nav li a::before{
+    content: '';
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: none;
+}
+
+.toolMenuitemsContainer nav li a{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color:#00357a;
+font-size: 1em;
+line-height: 1.5;
+font-weight: normal;
+text-decoration: none;
+color: white;
+text-align: left;
+border-radius: 0 calc(16px * 1.5) calc(16px * 1.5) 0;
+margin-right: calc( 16px / 2);
+margin-bottom: 2px;
+padding: 10px 8px;
+
+
+}
+
+
+.toolMenuitemsContainer nav li a:hover{
+box-shadow: 0 3px 3px -2px rgba(182, 138, 93, 0.623), 0 4px 4px 0 rgba(182,138,93,.12), 0 1px 5px 0 rgba(182,138,93.12);
+    transition: 100ms ease-out;
+color: #ffbf0f ;
+    background:#f3f3f4;
+    outline: 0;
+}
+
+
+
+.toolMenuitemsContainer-icon::before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f005";
+    font-weight: 600;
+
+}
+
+
+
+.toolMenuitemsContainer-icon{
+    
+    height: 100%;
+    font-size: 16px;
+    width: 1.28571em;
+    text-align: center;
+    display: block;
+    line-height: 1.25;
+        
+}
+
+
+
+.toolMenuitemsContainer-title{
+    width: calc(216px - 52px - 16px);
+    display: flex;
+align-items: center;
+    margin-left: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+font-weight: 500 ;
+
+}
+
+
+.toolMenuitemsContainer-block{
+    margin-right: 10px;
+    margin-left: 0px;
+    display: flex;
+}
+
+
+.is-current{
+
+color:#00357a !important;
+background: #ffbf0f !important; ;
+}
+
+
+.togglefixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(216px - 1px);
+    padding: 0;
+    border-top: 1px solid #e3e4e5;
+    border-bottom: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    background-color: #00357a;
+    border: none !important;
+}
+
+.togglefixed button{
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0 16px;
+    width: 100%;
+    height: 52px;
+    text-align: right;
+    display: inline-block;
+        
+}
+
+.togglefixed button span::before {
+    content: "\f100";
+    font-size:12pt;
+}
+
+.togglefixed button span {
+    font-size:12pt;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.min{
+    justify-content: center;
+    width: calc(52px - 1px);
+    color: white;
+    border-top: 1px solid white;
+   
+}
 
 
 /* home.html */
