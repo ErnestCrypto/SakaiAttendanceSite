@@ -759,8 +759,9 @@ text-transform: capitalize;
 .pagebody{
     display: flex;
     align-items: stretch;
- 
+    
     flex-direction: row;
+   
 }
 
 .toolMenu{
@@ -772,7 +773,7 @@ text-transform: capitalize;
     padding: calc(16px / 2) 0 0 0;
     text-align: center;
     border-right: 1px solid #e3e4e5;
-
+    padding-bottom:10%;
 
 }
 
@@ -917,6 +918,7 @@ background: #ffbf0f !important; ;
     color: white;
     background-color: #00357a;
     border: none !important;
+   
 }
 
 .togglefixed button{
@@ -962,6 +964,215 @@ background: #ffbf0f !important; ;
 }
 
 
+.pagebody-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+ 
+}
+.nav-site{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+    min-height: initial;
+    margin: 0;
+    padding: 16px;
+}
+
+.sitenameseperator{
+        display: none;
+}
+
+.sites-2{
+    display: none;
+}
+
+.sitename a{
+    color: white;
+    margin: 0 16px;
+    padding: 0;
+    text-decoration: none;
+}
+
+.toolname{
+    color:#00357a;
+
+}
+
+.toolNameText{
+ font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+
+.toolnameicon{
+    display: inline-block;
+    text-align: center;
+   align-items: center;
+    color: #00357a;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reseticon{
+    display: none;
+}
+
+
+.maincontent{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+
+
+.col-1{
+    min-width: 48%;
+    margin: 0 16px 16px 16px;
+    flex: 1 1 0;
+    
+}
+
+.col-1-container{
+    border: none;
+    box-shadow: 0 3px 3px -2px rgba(182, 138, 93, 0.623), 0 4px 4px 0 rgba(182,138,93,.12), 0 1px 5px 0 rgba(182,138,93.12);
+    margin-bottom: 16px;
+}
+
+.toolheader{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00357a;
+    border-bottom: none;
+    padding: 16px;
+}
+
+.toolheader h2{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    position: relative;
+}
+
+.toolTitleNav{
+    
+    font-weight: 400;
+    color:white;
+    text-transform:capitalize;
+}
+
+.addLeft{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+}
+
+.toolheaderbuttons{
+    font-size: 1.2em;
+    display: flex;
+        align-items: center;
+    margin: 0;
+}
+
+
+
+.toolheaderbuttons-1{
+    margin-right: 0em;
+    padding: 7px 16px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #ffbf0f;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 18px;
+    color: #202122;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+   
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 4px;
+}
+
+.itemTitle{
+    display: none;
+        margin-left: 4px;
+}
+
+
+.toolheaderbuttons-1:hover{
+
+    color: white;
+    text-decoration: none;
+    background: #b6975d;
+    border-color: white;
+  
+}
+
+.toolbody{
+    border-bottom: none;
+    padding: 16px;
+    
+}
+
+
+.portletBody{
+        height: 600px;
+        overflow: auto;
+        padding: 0;
+        text-transform: uppercase;
+}
+
+.col-2{
+    flex: 1 1 0;
+    margin: 0 16px 16px 16px;
+   
+}
+
+.col-2-container{
+    border: none;
+    
+    box-shadow:0 3px 3px -2px rgba(182, 138, 93, 0.623), 0 4px 4px 0 rgba(182,138,93,.12), 0 1px 5px 0 rgba(182,138,93.12);
+    margin-bottom: 16px;
+}
+
+
+.toolheader-2{
+    background-color: #00357a;
+    border-bottom: none;
+    padding: 16px;
+    display: flex;
+    justify-content:flex-end;
+
+}
+.toolheader-2 h2{
+    display: none;
+    font-size: 0.9em;
+    float: left;
+}
+
+.toolbody iframe{
+    height: 502px;
+        padding: 16px;
+    margin: 0 0 0 0;
+    width: 100%;
+
+}
+
 /* home.html */
 
 
@@ -991,6 +1202,19 @@ background: #ffbf0f !important; ;
     margin: 2em auto;
 }
 /* index.html */
+
+/* home.html */
+.nav-site{
+    align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    flex-wrap: wrap;
+    min-height: initial;
+    margin: 0;
+    padding: 16px;
+}
+/* home.html */
+
 }
 
 
